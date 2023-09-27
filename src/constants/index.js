@@ -116,7 +116,7 @@ import {
       title: "Full Stack Developer BootCamp",
       company_name: "Green Fox Academy",
       icon: gf,
-      iconBg: "white",
+      iconBg: "#D2FFDC",
       date: "March 2023 - September 2023",
       points: [
         "Developing and maintaining web applications using different technologies.",
