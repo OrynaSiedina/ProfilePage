@@ -1,17 +1,11 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
   figma,
   docker,
@@ -19,7 +13,7 @@ import {
   jobit,
   tripguide,
   threejs,
-  gf, ph, DTS, penta,
+  gf, ph, DTS, penta, springframework, java, empty,
 } from "../assets";
   
   export const navLinks = [
@@ -37,78 +31,63 @@ import {
     },
   ];
   
-  const services = [
-    {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
-  ];
-  
   const technologies = [
     {
-      name: "HTML 5",
+      title: "HTML 5",
       icon: html,
     },
     {
-      name: "CSS 3",
+      title: "CSS 3",
       icon: css,
     },
     {
-      name: "JavaScript",
+      title: "JavaScript",
       icon: javascript,
     },
     {
-      name: "TypeScript",
+      title: "TypeScript",
       icon: typescript,
     },
     {
-      name: "React JS",
+      title: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
+      title: "Tailwind CSS",
       icon: tailwind,
     },
     {
-      name: "Node JS",
+      title: "Java",
+      icon: java,
+    },
+    {
+      title: "Node JS",
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      title: "Spring Framework",
+      icon: springframework,
     },
     {
-      name: "Three JS",
+      title: "Three JS",
       icon: threejs,
     },
     {
-      name: "git",
+      title: "git",
       icon: git,
     },
     {
-      name: "figma",
+      title: "figma",
       icon: figma,
     },
     {
-      name: "docker",
+      title: "docker",
       icon: docker,
     },
+    {
+      title: "etc...",
+      icon: empty,
+    }
   ];
   
   const experiences = [
@@ -229,4 +208,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, projects };
+  export { technologies, experiences, projects };

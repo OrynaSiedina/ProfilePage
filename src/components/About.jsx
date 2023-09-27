@@ -3,14 +3,14 @@ import {Tilt}from "react-tilt";
 import {motion} from "framer-motion";
 import {styles} from "../styles.js";
 import {fadeIn, textVariant} from "../utils/motion.js";
-import {services} from "../constants";
+import {technologies} from "../constants";
 import SectionWrapper from "../hoc/SectionWrapper.jsx";
 
 const ServiceCard = ({ index, title, icon }) => (
-    <Tilt className='w-52'>
+    <Tilt className='w-36'>
         <motion.div
             variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-            className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+            className='w-36 green-pink-gradient p-[1px] rounded-[20px] shadow-card'
         >
             <div
                 options={{
@@ -18,7 +18,7 @@ const ServiceCard = ({ index, title, icon }) => (
                     scale: 1,
                     speed: 450,
                 }}
-                className='bg-tertiary rounded-[20px] py-1 px-1 min-h-[30px] flex justify-evenly items-center flex-col'
+                className='bg-tertiary rounded-[20px] py-1 px-1 min-h-[150px] justify-evenly flex items-center flex-col'
             >
                 <img
                     src={icon}
@@ -44,15 +44,14 @@ const About = () => {
                 variants={fadeIn("", "", 0.1, 1)}
                 className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
             >
-                Aspiring junior software developer with a background in the hospitality industry, eager to embark on an
-                entry-level role in software development My hospitality experience has honed my ability to thrive in
+                Aspiring junior software developer with a background in the hospitality industry. My hospitality experience has honed my ability to thrive in
                 high-pressure project-driven environments, where my focus, action-oriented approach, and commitment to
                 quality shine. I am a perpetual learner who views challenges as opportunities, firmly believing in
-                creative problem-solving. I'm excited to apply my adaptability, determination, and collaborative
-                development skills to contribute to the IT industry's growth and success.
+                creative problem-solving.
             </motion.p>
-            <div className='mt-20 flex flex-wrap gap-10'>
-                {services.map((service, index) => (
+            <p className={`${styles.sectionSubText} mt-5`}>My toolkit:</p>
+            <div className='mt-5 flex flex-wrap gap-5'>
+                {technologies.map((service, index) => (
                     <ServiceCard key={service.title} index={index} {...service} />
                 ))}
             </div>
