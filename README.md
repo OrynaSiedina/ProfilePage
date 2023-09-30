@@ -3,7 +3,7 @@
 Welcome to my page, my name is Arina} and I'm a alumni of intensice Full Stack Developer course in Green Fox Academy.
 
 ## Hire me
-LinkedIn: [{link}](https://www.linkedin.com/in/siedina-oryna-43a539286/)
+LinkedIn: [{Oryna Siedina}](https://www.linkedin.com/in/siedina-oryna-43a539286/)
 Myweb: https://arinasiedina.online/
 Email: orynasiedina@gmail.com
 
