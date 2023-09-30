@@ -65,7 +65,7 @@ const ProjectCard = ({
 
 const Works = () => {
     return (
-        <>
+        <section id="projects">
             <motion.div variants={textVariant()}>
                 <p className={styles.sectionSubText}>My work</p>
                 <h2 className={styles.sectionHeadText}>Projects</h2>
@@ -81,7 +81,7 @@ const Works = () => {
                     and manage projects effectively.
                 </motion.p>
             </div>
-            <div className="mt-5 flex flex-wrap gap-7">
+            <div className="mt-5 flex flex-nowrap">
                 {
                     projects.map((project, index) => (
                         <ProjectCard
@@ -92,7 +92,7 @@ const Works = () => {
                     ))
                 }
             </div>
-        </>
+        </section>
     )
 }
 

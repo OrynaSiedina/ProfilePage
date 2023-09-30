@@ -24,7 +24,12 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
-        emailjs.send('service_hu8z518', 'template_9ksfexo', {
+        (error) => {
+                alert("Something went wrong. Please try again.")
+                console.log(error.message);
+                setLoading(false);
+            },
+            emailjs.send('service_hu8z518', 'template_9ksfexo', {
             from_name: form.name,
             to_name: 'Arina-porfdolio',
             reply_to: form.email,
@@ -38,18 +43,13 @@ const Contact = () => {
                     email: "",
                     message: "",
                 })
-            }),
-            (error) => {
-                alert("Something went wrong. Please try again.")
-                console.log(error.message);
-                setLoading(false);
-            }
+            })
     }
     return (
         <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hiden">
             <motion.div
                 variants={slideIn("left", "tween", 0.2, 1)}
-                className="flex-[0.75] bg-black-100 rounded-2xl p-8"
+                className="flex-1 bg-black-100 rounded-2xl p-8"
             >
                 <p className={styles.sectionSubText}>Get in touch</p>
                 <h3 className={styles.sectionHeadText}>Contact</h3>
@@ -86,7 +86,7 @@ const Contact = () => {
                     <label className=" flex flex-col">
                         <span className="text-white font-medium mb-4">Your Message</span>
                         <textarea
-                            rows="7"
+                            rows="3"
                             name="message"
                             value={form.message}
                             onChange={handleChange}
