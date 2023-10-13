@@ -10,12 +10,6 @@ Email: orynasiedina@gmail.com
 ## &rarr; Coding projects
 AI-Playground : [link-to-repo](https://github.com/OrynaSiedina/AIplayground)
 
-## &rarr; [Interview prep](https://github.com/green-fox-academy/teaching-materials/tree/master/interview)
-LeetCode: https://leetcode.com/{username}
-
-Hackerrank: https://www.hackerrank.com/{username}
-
-Codewars: https://www.codewars.com/users/{username}
 
 
 
